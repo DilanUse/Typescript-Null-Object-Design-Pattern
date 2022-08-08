@@ -5,8 +5,8 @@ export class LearnerView {
 
     public constructor(learner: ILearner)
     {
-        if(learner == null) throw new Error('Null reference');
-        if(learner.userName == null) throw new Error('Null reference');
+        // if(learner == null) throw new Error('Null reference');
+        // if(learner.userName == null) throw new Error('Null reference');
 
         this._learner = learner;
     }

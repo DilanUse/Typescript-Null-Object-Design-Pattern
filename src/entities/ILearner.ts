@@ -3,3 +3,4 @@ export interface ILearner {
     userName: string;
     coursesCompleted: number;
 }
+

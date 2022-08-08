@@ -1,5 +1,6 @@
 import {Learner} from '../entities/Learner';
 import {ILearner} from '../entities/ILearner';
+import {NullLearner} from '../entities/NullLearner';
 
 export class LearnerService {
     LearnerRepo = class {
@@ -35,7 +36,7 @@ export class LearnerService {
         const learner = this._repo.getLearner(learnerId);
 
         if (learner == null) {
-            throw new Error('Null reference');
+            return new NullLearner();
         }
 
         return learner;
